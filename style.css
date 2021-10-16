@@ -1,0 +1,46 @@
+/* HEADER */
+header {
+    background-color: rgb(189, 188, 188);
+    line-height: normal;
+    text-align: right;
+    transform: translateZ(0);
+    vertical-align: middle;
+    max-width: 100%;
+    z-index: 3;
+    text-decoration: none;
+    padding: 55px;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(127, 255, 255);
+    padding: 10px;
+}
+
+nav {
+    font-family: 'Anton',sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* BODY */
+
+
+
+
+
+/* SLIDE-SHOP-BAR */
+
+
+
+
+
+/* FOOTER */
