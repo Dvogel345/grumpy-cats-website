@@ -64,17 +64,23 @@ body {
 /* POSTS */
 
 
-.feed {
+.feed ul {
     background-color: #8FBFD7;
     min-width: 100%;
     text-align: center;
 }
 
-.feed img {
-    max-width: 40rem;
+.posts li {
     border: 10px solid white;
 }
 
+.feed img {
+    max-width: 40vh;
+}
+/* remove bullets to .feed section */
+.feed li {
+    list-style-type: none;
+}
 
 /* SLIDE-SHOP-BAR */
 
