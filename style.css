@@ -33,6 +33,19 @@ body {
     padding: 10px;
 }
 
+/* POSTS */
+
+
+.feed {
+    background-color: #8FBFD7;
+    min-width: 100%;
+    text-align: center;
+}
+
+.feed img {
+    max-width: 40rem;
+    border: 10px solid white;
+}
 
 
 /* SLIDE-SHOP-BAR */
