@@ -12,7 +12,26 @@ header {
     margin: 0%;
 }
 
-<<<<<<< HEAD
+.logo {
+    color: #f7f6f4;
+    display: inline-block;
+    width: 100%;
+    height: 17.97%;
+    transition: color 300ms;
+    font-family: 'Anton',sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    display: block;
+    font-size: 5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
 body {
     background-color: rgb(127, 255, 255);
     padding: 10px;
@@ -21,8 +40,6 @@ body {
     background-color: #f7f6f4;
     font-size: 16px;
 }
-=======
->>>>>>> 181fa3198d22dfa23a5202155f8ff96b1dd44d69
 nav {
     font-family: 'Anton',sans-serif;
     font-size: 1.5rem;
@@ -162,7 +179,6 @@ body {
   }
 
 /* FOOTER */
-<<<<<<< HEAD
 .footer {
     background: #c83418;
     padding: 1rem 1rem 10rem;
@@ -326,6 +342,4 @@ p {
     background: #3B5998;
     color: white;
 }
-=======
 
->>>>>>> 181fa3198d22dfa23a5202155f8ff96b1dd44d69
