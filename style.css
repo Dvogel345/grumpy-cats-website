@@ -1,0 +1,60 @@
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #8fbfd7;
+  display: block;
+}
+
+div {
+  max-width: 500px;
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+  box-shadow: 1px 2px 1px 2px grey;
+  transform: rotate(-5deg);
+}
+
+.pic2 {
+  transform: rotate(5deg);
+}
+
+.post-date {
+  font-family: "Indie Flower", cursive;
+  margin: 0;
+}
+
+.post-title {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 0;
+}
+
+img {
+  max-width: 450px;
+}
+
+div:hover {
+  transform: rotate(0);
+  transform: scale(1.1);
+}
+
+.cats-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .cats-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    width: 200px;
+    flex-direction: column;
+  }
+}
