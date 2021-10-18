@@ -31,11 +31,6 @@ header {
     font-weight: bold;
 }
 
-
-body {
-    background-color: rgb(127, 255, 255);
-    padding: 10px;
-}
 :root {
     background-color: #f7f6f4;
     font-size: 16px;
@@ -46,14 +41,18 @@ nav {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    
 }
 
 ul {
     list-style-type: none;
 }
-
-
+header a {
+  color: #C83418;
+}
+header a:hover {
+  color: #C83418;
+  text-transform: uppercase;
+}
 /* BODY */
 
 body {
@@ -61,74 +60,151 @@ body {
     padding: 10px;
 }
 
-/* POSTS */
-#capitalize {
-  text-transform: capitalize;
+/* PICTURE SECTION */
+/* remove bullets from ul */
+.picture-section li {
+  list-style-type: none;
 }
-
-
-
-.picture-section ul {
+/* general css */
+.picture-section {
     background-color: #8FBFD7;
     min-width: 100%;
     text-align: center;
     list-style-type: none;
 }
-
-.posts li {
-    border: 10px solid white;
-}
-
-div {
+/* borders and orientation */
+.picture-section div{
   max-width: 500px;
   padding: 10px;
   margin: 5px;
   background-color: white;
   box-shadow: 1px 2px 1px 2px grey;
-  transform: rotate(-5deg);
 }
-
-.pic1 {
-  transform: rotate(5deg);
+/* load more button */
+.picture-section  button{
+  padding: .5em 4em .5em 4em;
+  margin: 2em 1em 4em 1em;
+  text-align: center;
+  background-color: #8FBFD7;
+  border: rgb(247,246,244) solid 3px ;
+  color: rgb(247,246,244);
+  border-radius: 20px;
+  font-family: 'Anton',sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  text-transform: uppercase;
 }
-
-
-.pic2 > div {
-  transform: rotate(5deg);
+/* hover button */
+.picture-section  button:hover{
+  background-color: rgb(247,246,244);
+  color: #8FBFD7;
 }
-
+/* date */
 .post-date {
   font-family: "Indie Flower", cursive;
   margin: 0;
 }
-
+/* title */
 .post-title {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1em;
   margin: 0;
 }
-
+/* img */
 .picture-section img {
   max-width: 450px;
 }
-
-div:hover {
-  transform: rotate(0);
-  transform: scale(1.1);
-}
-
-.pic2 div:hover {
-  transform: rotate(0);
-  transform: scale(1.1);
-}
-
+/* flex box */
 .cats-pics {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+/* pic 1 animation orientation */
+/* rotate on page open */
+.pic {
+  transform: rotate(-5deg);
+}
+/* upright on hover */
+.pic > div:hover {
+  transform: rotate(0);
+}
+/* animation for hover */
+.pic:hover {
+  animation-name: pic1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes pic1 {
+  0%   {transform: rotate(-5deg) scale(1) ;}
+  1%   {transform: rotate(-5deg) scale(1); z-index: 1;} 
+  100% {transform: rotate(0deg) scale(1.1); z-index: 1;}
+}
+/* pic 2 animation orientation */
+/* rotate on page open */
+.pic2  {
+  transform: rotate(5deg);
+}
+/* upright on hover */
+.pic2 > div:hover {
+  transform: rotate(0);
+}
+/* animation for hover */
+.pic2:hover {
+  animation-name: pic2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 
+@keyframes pic2 {
+  0%   {transform: rotate(5deg) scale(1);}
+  1%   {transform: rotate(5deg) scale(1); z-index: 1;} 
+  100% {transform: rotate(0deg) scale(1.1); z-index: 1;}
+}
+
+/* pic 3 animation orientation */
+/* rotate on page open */
+.pic3 {
+  transform: rotate(2deg);
+}
+/* upright on hover */
+.pic3 > div:hover {
+  transform: rotate(0);
+}
+/* animation for hover */
+.pic3:hover {
+  animation-name: pic3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes pic3 {
+  0%   {transform: rotate(2deg) scale(1) ;}
+  1%   {transform: rotate(2deg) scale(1); z-index: 1;} 
+  100% {transform: rotate(0deg) scale(1.1); z-index: 1;}
+}
+
+/* pic 4 animation orientation */
+/* rotate on page open */
+.pic4 {
+  transform: rotate(-3deg);
+}
+/* upright on hover */
+.pic4 > div:hover {
+  transform: rotate(0);
+}
+/* animation for hover */
+.pic4:hover {
+  animation-name: pic4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes pic4 {
+  0%   {transform: rotate(-3deg) scale(1) ;}
+  1%   {transform: rotate(-3deg) scale(1); z-index: 1;} 
+  100% {transform: rotate(0deg) scale(1.1); z-index: 1;}
+}
+/* Mobile Accessibility */
 @media (max-width: 800px) {
   .cats-pics {
     display: flex;
@@ -139,12 +215,20 @@ div:hover {
     width: 200px;
     flex-direction: column;
   }
+  /* load more button */
+.picture-section  button{
+  padding: .5em 1em .5em 1em;
+  font-size: 2em;
 }
-/* remove bullets to .feed section */
-.feed li {
-    list-style-type: none;
 }
 
+/* Button screen size adjustment */
+@media (max-width:1200px) {
+.picture-section  button{
+  padding: .1em .5em .1em .5em;
+  font-size: 2em;
+}
+}
 /* SLIDE-SHOP-BAR */
 
 * {box-sizing:border-box}
