@@ -113,7 +113,7 @@ body {
 }
 /* img */
 .picture-section img {
-  max-width: 450px;
+  max-width: 45vmin;
 }
 /* flex box */
 .cats-pics {
